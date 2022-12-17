@@ -8,5 +8,26 @@
     "experimental": false,
     "features": {
       "buildkit": true
+    },
+    "configurations": [
+
+      {
+        "version": "0.1.0",
+        "configurations": [
+            {
+                "type": "devtools-for-chrome",
+                "request": "launch",
+                "name": "Launch Chrome DevTools",
+                "file": "${workspaceFolder}/index.html"
+            },
+            {
+                "type": "devtools-for-chrome",
+                "request": "attach",
+                "name": "Attach Chrome DevTools",
+                "url": "http://localhost:8000/"
+            }
+        ]
     }
+
+    ]
   }
